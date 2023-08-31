@@ -1,3 +1,57 @@
-body{
-    background: red;
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Cairo&family=Handjet:wght@300&family=Lato:wght@300&family=Poppins:wght@200&family=Tilt+Prism&family=Vina+Sans&display=swap');
+
+*{
+    margin: 0;
+    
+}
+.navbar ul,li {
+    list-style: none;
+   
+}
+.navbar{
+    width: 100%;
+    font-size: 1.5rem;
+    height:100px;
+    background:rgb(232, 232, 183);
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+    align-items: center;
+    font-family:'Bricolage Grotesque', sans-serif;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+/* .nav-center{
+    display: grid;
+    text-align: center;
+} */
+.navbar-list{
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns:1fr 1fr auto auto ;
+    grid-template-rows: 1fr ;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    justify-self: end;
+}
+.navbar-list a {
+   text-decoration: none;
+   
+}
+.section-center{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+@media screen and(min-width:992px){
+    .section-center{
+        width: 95vw;
+    }
+    
+}
+.hero-info{
+   line-height: 2rem;
 }
