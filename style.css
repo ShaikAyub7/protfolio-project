@@ -156,7 +156,7 @@ p {
 }
 
 .section-center {
-  /* width: 90vw; */
+  width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
 }
@@ -432,6 +432,7 @@ Navbar
     margin-left: 1rem;
     
   }
+  
   .project-info {
     text-align: center;
     color: #fff;
@@ -469,17 +470,17 @@ Navbar
     transform: scale(0.8);
   }
   @media screen and(min-width:676px) {
-    .project{
+    .project {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: "" ;
       column-gap: 2rem;
     }
     
   }
   @media screen and(min-width:992px) {
-    .project{
-     
+   .project {
       grid-template-columns: 1fr 1fr 1fr;
+      
       
     }
     
