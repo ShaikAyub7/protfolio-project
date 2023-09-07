@@ -10,9 +10,12 @@
     href="./images/favicon.ico">
 </head>
 <body>
+
+<div>
+    <!-- <div class="lds-ring"><div></div></div></div> -->
     <nav class="navbar " id="nav">
        
-        <div class="nav-center">
+        <div class="nav-center" id="top">
           <img src="./images/Screenshot_from_2023-09-01_14-48-11-removebg-preview.png" alt="logo" class="img-nav">
         </div>
         <ul class="navbar-list">
@@ -34,7 +37,7 @@
     <div class="hero-center section-center">
         <article class="hero-info">
            <!-- <div class="underline"></div> -->
-                <h1>i'm AYUB</h1>
+                <h1 id="up">i'm AYUB</h1>
                 <h3>i am a freeleancer and a web designer and an app developer. </h3>
              <a href="#" class="btn">hire me</a>
             
@@ -188,7 +191,7 @@
 
  </section>
 
-
+<a href="#up" class="up"><i class="fa-solid fa-up-long fa-beat"></i></a>
 <section class="section skills">
     <div class="section-title">
         <h2>skills</h2>
@@ -308,8 +311,120 @@
                 </div>
 </section>
 
+<section class="blog section">
+    <div class="section-title">
+        <h2>blogs</h2>
+        <div class="underline"></div>
+    </div>
+    <div class="section-center blog-center">
+        <div class="card">
+        <div class="card-side card-front">
+           <img src="./images/project-1.jpeg" alt="">
+           <div class="card-info">
+           <h4>article title</h4>
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id deserunt nostrum atque velit explicabo exercitationem quaerat facere ipsum possimus corrupti ullam, voluptate animi maxime voluptatum aliquam sit iusto libero!
+           </p>
+           <div class="card-footer">
+            <img src="./images/hero-img-small.jpeg" alt="">
+            <p>7 min read</p>
+           </div>
+           </div>
+        </div>
+    <div class="card-side card-back">
+       <a href="#" class="btn">read more</a>
+    </div>
+    </div>
+   
+
+   
+        <div class="card">
+        <div class="card-side card-front">
+           <img src="./images/project-2.jpeg" alt="">
+           <div class="card-info">
+           <h4>article title</h4>
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id deserunt nostrum atque velit explicabo exercitationem quaerat facere ipsum possimus corrupti ullam, voluptate animi maxime voluptatum aliquam sit iusto libero!
+           </p>
+           <div class="card-footer">
+            <img src="./images/hero-img-small.jpeg" alt="">
+            <p>7 min read</p>
+           </div>
+           </div>
+        </div>
+    <div class="card-side card-back">
+       <a href="#" class="btn">read more</a>
+    </div>
+    </div>
+
+            
+
+  
+        <div class="card">
+        <div class="card-side card-front">
+           <img src="./images/project-3.jpeg" alt="">
+           <div class="card-info">
+           <h4>article title</h4>
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id deserunt nostrum atque velit explicabo exercitationem quaerat facere ipsum possimus corrupti ullam, voluptate animi maxime voluptatum aliquam sit iusto libero!
+           </p>
+           <div class="card-footer">
+            <img src="./images/hero-img-small.jpeg" alt="">
+            <p>7 min read</p>
+           </div>
+           </div>
+        </div>
+    <div class="card-side card-back">
+       <a href="#" class="btn">read more</a>
+    </div>
+    </div>
+
+
+
+ 
+        <div class="card">
+        <div class="card-side card-front">
+           <img src="./images/project-4.jpeg" alt="">
+           <div class="card-info">
+           <h4>article title</h4>
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id deserunt nostrum atque velit explicabo exercitationem quaerat facere ipsum possimus corrupti ullam, voluptate animi maxime voluptatum aliquam sit iusto libero!
+           </p>
+           <div class="card-footer">
+            <img src="./images/WhatsApp Image 2023-09-01 at 2.31.14 PM.jpeg" alt="">
+            <p>7 min read</p>
+        </div>
+           </div>
+        </div>
+    <div class="card-side card-back">
+       <a href="#" class="btn">read more</a>
+    </div>
+    </div>
+  
+
+</section>
+<footer class="footer">
+  
+    <ul class="icons">
+        <li> <a href="#"><i class="fa-brands fa-facebook" ></a></i></li>
+         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-squarespace"></i></a></li>
+       
+              <li><a href="#"><i class="fa-brands fa-instagram" ></i></a></li>
+     </ul>
+     <p>&copy;2023 <span id="date"></span> all copyright reserved</p>
+</footer>
 
     <!-- javascript -->
     <script src="./js/app.js"></script>
+
+    <script>
+
+        var loader = document.getElementById("preloaderl");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
 </body>
 </html>
