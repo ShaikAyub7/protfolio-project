@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div>
+<div class="preloader"></div>
     <!-- <div class="lds-ring"><div></div></div></div> -->
     <nav class="navbar " id="nav">
        
@@ -19,13 +19,10 @@
           <img src="./images/Screenshot_from_2023-09-01_14-48-11-removebg-preview.png" alt="logo" class="img-nav">
         </div>
         <ul class="navbar-list">
-            <li><a href="#">home</a></li>
-
-            <li><a href="#">about</a></li>
-
-            <li><a href="#">projects</a></li>
-
-            <li><a href="#">contact</a></li>
+            <button class="home">home</button>
+            <button class="about">about</button>
+            <button class="contact">contact</button>
+            <button class="projects">projects</button>
 
            
         </ul>
@@ -71,11 +68,12 @@
 
     </div>
 </section>
-<section class="section bg-grey">
+<div class="section bg-grey">
     <div class="section-title">
         <h2>services</h2>
         <div class="underline"></div>
     </div>
+
     <div class="services-center section-center">
         <article class="service">
          <i class="fas fa-code service-icon"></i>
@@ -96,7 +94,7 @@
             <h4>app design</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati maiores vel aspernatur ipsa voluptatum optio consectetur voluptates tenetur fugit non.</p>
            </article>
-   
+  
     </div>
 </section>
 
@@ -415,16 +413,48 @@
      <p>&copy;2023 <span id="date"></span> all copyright reserved</p>
 </footer>
 
+
+<div class="modal hidden">
+    <h4>Home</h4>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi a accusantium sequi ex. Neque, ipsa quo eos laborum enim voluptate quas tempore at accusamus aut numquam incidunt vero eveniet?
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti iste necessitatibus id alias impedit esse unde totam maiores nesciunt recusandae?
+    
+    </div>
+
+    <div class="modal-about hidden">
+        <h4>about</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi a accusantium sequi ex. Neque, ipsa quo eos laborum enim voluptate quas tempore at accusamus aut numquam incidunt vero eveniet?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti iste necessitatibus id alias impedit esse unde totam maiores nesciunt recusandae?
+        
+        </div>
+
+        <div class="modal-projects hidden">
+            <h4>projects</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi a accusantium sequi ex. Neque, ipsa quo eos laborum enim voluptate quas tempore at accusamus aut numquam incidunt vero eveniet?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti iste necessitatibus id alias impedit esse unde totam maiores nesciunt recusandae?
+            
+            </div>
+            <div class="modal-contact hidden">
+                <!-- <h3>contact</h3> -->
+                
+                    <div class="modal-content">
+                    
+                      <h4>Contact Us</h4>
+                      <form action="">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                        <input type="submit" value="Submit">
+                      </form>
+                    </div>
+                  </div>
+                
     <!-- javascript -->
-    <script src="./js/app.js"></script>
+    <script src="./app.js"></script>
 
-    <script>
-
-        var loader = document.getElementById("preloaderl");
-
-        window.addEventListener("load", function(){
-            loader.style.display = "none";
-        })
-    </script>
+    
 </body>
 </html>
