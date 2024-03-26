@@ -833,9 +833,9 @@ body ::-webkit-scrollbar {
 .value-70 {
   width: 70%;
 }
-.value-50 {
+/* .value-50 {
   width: 50%;
-}
+} */
 .skill-text {
   position: absolute;
   top: -2rem;
@@ -907,8 +907,9 @@ body ::-webkit-scrollbar {
 .blog {
   background: var(--clr-grey-10);
 }
+
 .card {
-  height: 28rem;
+  height: 30rem;
   position: relative;
   perspective: 1500px;
 }
